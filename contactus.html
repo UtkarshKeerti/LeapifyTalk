@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leapify</title>
+  <!-- CUSTOM CSS -->
+  <link rel="stylesheet" href="./style.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Bootstrap CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+  <div class="mother-cont">
+     <!-- NAV -->
+
+     <nav class="navbar navbar-expand-lg ">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html">
+          <img src="./Assets/white_logo_transparent_background2 1.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
+          LeapifyTalk
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./index.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./index.html">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./providers.html">Provider</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-active" aria-current="page" href="./counselor-job.html">Counselor Job</a>
+            </li>
+          </ul>
+          <form class=" justify-content-start">
+            <button class="btn nav-btn-signin" type="button">Sign In</button>
+            <button class="btn nav-btn-gs" type="button"><a href="./get-started.html"> Get Started</a></button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- CONTACT US -->
+
+    <div class="contact-us">
+      <div class="cus-overlay">
+        <img src="./Assets/Mask Group (15).svg" alt="">
+        <h2>Contact Us</h2>
+        <h4>Do you have a question, concern, idea, feedback, or problem? Take a look at our frequently asked questions for some quick answers. If you still need assistance, please fill out the form below and we'd be happy to help!</h4>
+      </div>
+      <form class="sm-form">
+          <div class="sm-form-line">
+            <div id="c-name" class="first-name p-0 ">
+              <label for="name">Name</label>
+              <input class="sm-active" type="text" required placeholder="Enter your name">
+            </div>
+            <!-- <div class="last-name p-0">
+              <label for="Last-name">Last-name</label>
+              <input type="text" required placeholder="Enter your last name">
+            </div> -->
+            <div id="c-email" class="email p-0 ">
+              <label for="email">Email ID</label>
+              <input class="sm-active" type="email" required placeholder="Enter your email in the format xyz@abc.com">
+            </div>
+            <!-- <div class="last-name p-0">
+              <label for="Last-name">Phone Number</label>
+              <input type="tel" pattern="[0-9]{10}" size="10" required placeholder="Enter your 10 digit valid phone number">
+            </div> -->
+          </div>
+          <div class="toc">
+            <label for="type of contact">Type of Contact</label>
+            <div class="dropdown">
+              <button class="toc-dropdown-btn btn w-100 dropdown-toggle" value="d-btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                <p style="margin: 0; opacity: 0.4;">Choose a reason for contact</p>
+              </button>
+              <ul class="w-100 dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a onclick="textchange(0)" class="toc-dropdown-text dropdown-item" href="#">I have a question about the service.</a></li>
+                <li><a onclick="textchange(1)" class="toc-dropdown-text dropdown-item" href="#">I'm a registered client and I need support.</a></li>
+                <li><a onclick="textchange(2)" class="toc-dropdown-text dropdown-item" href="#">I'm a counselor interested in joining.</a></li>
+                <li><a onclick="textchange(3)" class="toc-dropdown-text dropdown-item" href="#">I'm a registered counselor and I need support.</a></li>
+                <li><a onclick="textchange(4)" class="toc-dropdown-text dropdown-item" href="#">I have a business-related inquiry.</a></li>
+                <li><a onclick="textchange(5)" class="toc-dropdown-text dropdown-item" href="#">I'm interested in leapify for my organization.</a></li>
+                <li><a onclick="textchange(6)" class="toc-dropdown-text dropdown-item" href="#">I have a billing related question.</a></li>
+              </ul>
+            </div>
+            <!-- <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown button
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </div> -->
+          </div>
+          <!-- <div class="m-ta">
+            <label for="message">Message</label>
+            <input class="form-control sm-active m-input w-100" type="text-area" required>
+          </div> -->
+          <div class="m-ta">
+            <label for="floatingTextarea2">Message</label>
+            <textarea class="form-control sm-active m-input" id="floatingTextarea2" style="height: 100px"></textarea>
+          </div>
+          <!-- <div class="sm-form-check d-flex">
+            <input type="checkbox" required>
+            <p>You accept the terms of service and the privacy policy</p>
+          </div> -->
+          <button id="csm" class="btn sm-form-btn disabled" type="submit">Send message</button>
+      </form>
+    </div>  
+  </div>
+
+  <!-- FOOTER -->
+
+  <div id="foot/about" class="footer flex-wrap">
+    <div class="footer-left">
+      <div class="footer-logo">
+        <a class="navbar-brand" href="./index.html">
+          <img src="./Assets/white_logo_transparent_background2 1.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
+          LeapifyTalk
+        </a>
+      </div>
+      <p class="fp-one">Mental health is an issue that is increasingly becoming more prevalent in our society. With the high cost of traditional therapy and the lack of availability of in-person therapy, it has become increasingly difficult for many people to access therapy. Leapify Talk is a software as a service teletherapy platform that provides virtual therapy sessions that are customized to each user. It is a platform that is easy to access and is designed to help certified therapists and their clients get the most out of each virtual therapy session.</p>
+    </div>
+    <div class="footer-right">
+      <a style="text-decoration: none; list-style: none;" href="./tnc.html"><p class="fr-p">Terms and Conditions</p></a>
+      <a style="text-decoration: none; list-style: none;" href="./privacypolicy.html"><p class="fr-p frp-padding">Privacy Policy</p></a>
+      <a style="text-decoration: none; list-style: none;" href="./contactus.html"><p class="fr-p frp-padding-two">Contact Us</p></a>
+    </div>
+    <div class="footer-lower">
+      <p class="fp-two">Copyright © 2021 Leapifytalk, All rights reserved</p>
+      <div class="footer-lower-followus">
+        <p class="fr-p">Follow us</p>
+        <div class="fr-img">
+          <img src="./Assets/Shape.svg" alt="">
+          <img src="./Assets/Shape (1).svg" alt="">
+          <img src="./Assets/Shape (2).svg" alt="">
+          <img src="./Assets/Shape (3).svg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- Jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- CUSTOM JS  -->
+  <script src="./main.js"></script>
+  <!-- Bootstrap JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
