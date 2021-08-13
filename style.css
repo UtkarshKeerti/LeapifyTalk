@@ -445,7 +445,7 @@ body{
 .reviews{
   padding: 0 12% 100px;
   /* margin-bottom: 160px; */
-  height: 70vh;
+  height: 50vh;
   /* background-color: #0EA5C6; */
   /* display: flex;
   justify-content: center;
@@ -1834,7 +1834,7 @@ body{
     font-size: 12px;
   }
   .reviews{
-    height: 95vh;
+    height: 65vh;
   }
   /* .pricing .pc-cont{
     overflow-x: auto;
@@ -1964,6 +1964,9 @@ body{
   }
   .reviews .carousel .carousel-indicators button{
     margin: 10px;
+  }
+  .reviews{
+    height: 90vh;
   }
   .faq-overlay h4{
     width: 100%;
