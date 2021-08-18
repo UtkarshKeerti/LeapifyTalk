@@ -221,7 +221,7 @@ body{
   /* left: 35%; */
   color: #fff;
   margin: 0;
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: 700;
 }
 
@@ -229,7 +229,7 @@ body{
   position: absolute;
   top: 35%;
   color: #fff;
-  font-size: 18px;
+  font-size: 1.25rem;
   padding-top: 15px;
   width: 450px;
   font-weight: 700;
@@ -240,6 +240,8 @@ body{
 
 .overlay .overlay-bullets p{
   padding-right: 22px;
+  font-weight: 700;
+  font-size: 1.25rem;
 }
 
 .overlay .overlay-bullets p:last-of-type{
@@ -249,10 +251,9 @@ body{
 
 .overlay .bulletpoint3{
   color: #fff;
-  font-size: 18px;
+  font-size: 1.25rem;
   position: absolute;
   top: 45%;
-  padding-right: 30px;
   padding-top: 10px;
   font-weight: 700;
 }
@@ -670,8 +671,7 @@ body{
 }
 
 .footer-right{
-  text-align: right;
-  padding-right: 80px !important;
+  text-align: start;
 }
 
 .footer-lower{
@@ -680,9 +680,11 @@ body{
   width: 100%;
 }
 
-.footer-lower .footer-lower-followus{
+ .footer-lower-followus{
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
+  margin-top: 100%;
+  margin-bottom: -100%;
 }
 
 .footer-left .footer-logo{
@@ -709,7 +711,7 @@ body{
   font-size: 20px;
   font-weight: 500;
   color: #fff;
-  padding-bottom: 30px;
+  padding-bottom: 10px;
   margin: 0;
   text-align: justify;
 }
@@ -735,6 +737,11 @@ body{
   width: 35px;
   padding: 7px 11px 6px 11.5px;
   border-radius: 8px;
+  margin-right: 15px;
+}
+
+.footer .fr-img img:last-of-type{
+  margin-right: 0;
 }
 
 .footer .frp-padding{
@@ -772,7 +779,7 @@ body{
 
 .services .services-part{
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 
@@ -1151,6 +1158,8 @@ body{
   display: flex;
    justify-content: center;
    align-items: center;
+   height: 60px;
+   width: 60px;
 }
 
 #back{
@@ -1161,12 +1170,14 @@ body{
    border: none; 
    border-radius: 35px;
    margin-left: 10px;
+   height: 100%;
+   width: 100%;
 }
 
 #back-arrow{
   position: absolute;
-  top: 5%;
-  left: 40%;
+  top: 25%;
+  left: 50%;
   /* transform: translateX(-50%); */
   color: #0EA5C6;
   font-weight: 700;
@@ -1482,7 +1493,7 @@ body{
     align-items: center;
   }
   .navbar-toggler-icon i{
-    color: #fff;
+    color: #F2EFB6;
   }
   .navbar .nav-btn-signin{
     width: 100px;
@@ -2132,6 +2143,20 @@ body{
   }
   .services .services-card{
     width: 30%;
+  }
+  .footer{
+    flex-wrap: wrap;
+  }
+  .footer-right{
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  .footer-lower-followus{
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .footer-right{
+    margin-top: 20px;
   }
 }
 
