@@ -79,6 +79,8 @@ body{
   font-size: 18px;
   font-weight: 700;
   color: #F2EFB6;
+  margin-right: 12px;
+  margin-left: 28px;
 }
 
 .navbar .nav-btn-signin:hover{
@@ -93,6 +95,7 @@ body{
   color: #0EA5C6;
   font-size: 18px;
   font-weight: 700;
+  margin-left: 12px;
 }
 
 .navbar .nav-btn-gs a{
